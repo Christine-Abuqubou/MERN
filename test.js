@@ -153,6 +153,88 @@ const greet = (xname) => {
 console.log(greet('Christine'));
 
 
+// discussion 2
+//java script is not class based language it is prototype based language 
+// every object in java script has a prototype
+//what is prototype ? prototype is an object that is associated with every functions and objects in java script
+// prototype is used to add properties and methods to objects
+// we can use prototype to add new properties and methods to existing objects
+
+//java script functional programming style language
+
+// java script dosnt made to support object oriented programming
+
+ class Person{
+    //def init in python
+    constructor(FirstName,lastName,age){
+        this.FistName= FirstName;
+        this.lastName= lastName;
+        this.age= age;
+    }
+    getName(){
+        return this.FistName + ' ' + this.lastName;
+
+    }
+    setName(newFirstName, newLastName){
+        this.FistName = newFirstName;
+        this.lastName = newLastName;
+    }
+    printInfo(){
+        console.log(`Name: ${this.getName()}, Age: ${this.age}`);
+    }
+    // we can apply some of four pillars of OOP here like inheritance and encapsulation but polymorphism and abstraction is bit difficult in java script
+    //we cant do encapsulation in java script like private and protected we can use _ to indicate that the property is private but its not enforced by the language
+
+
+
+ }
+
+ class Employee extends Person{
+    constructor(FirstName,lastName,age,salary){
+        super(FirstName,lastName,age); // calling the parent class constructor
+        this.salary = salary;
+    }
+ }
+
+ class Driver{
+    constructor(){
+        this.emp = new Employee('christine','abuqubou',25,50000);
+        this.emp.printInfo();
+    }
+ }
+
+ // type script class way example it will reduce the number of errors and it will make the code more readable
+
+// call back finctions is a function that is passed as an argument to another function 
+
+//why we use call back functions
+//1. to make the code more readable
+//2. to make the code more modular
+//3. to make the code more reusable
+//4. to handle asynchronous operations how  to handle async operations in js 
+// what async operations  in js
+// async operations are operations that take some time to complete like fetching data from a server reading a file from disk etc
+// how to handle async operations in js
+// we can use call back functions promises and async/await to handle async operations in js
+
+// when we use call back function 
+// it is used when we want to execute a function after another function has completed its execution
+// or when we want to execute a function when an event occurs like button click mouse over etc apis call 
+
+
+//node package manager npm
+// it is a package manager for java script
+// it is used to install and manage packages for java script
+// it is used to share code with other developers
+// it is used to create and publish packages for java script
+
+
+
+
+
+
+
+
 
 
 
