@@ -1,3 +1,10 @@
+//hoisting mean 
+// hoisting is a javascript mechanism where variables and function declarations are moved to the top of their scope before code execution
+
+// in javascript var variables and function declarations are hoisted
+// this means that we can use a variable or call a function before it is declared in the code
+
+
 console.log(example);
 var example = "im the example";
 

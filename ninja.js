@@ -16,6 +16,7 @@ class Ninja{
     drinkSake(){
         this.health +=10;
        console.log(`Health increased by 10 points! Current health: ${this.health}`);
+       
 
     }
     

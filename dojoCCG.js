@@ -1,0 +1,55 @@
+class Card{
+    constructor(name,cost){
+        this.name=name;
+        this.cost=cost;
+
+    }
+
+}
+class Unit extends Card{
+    constructor(name,cost,power,res){
+        super(name,cost);
+        this.power=power;
+        this.res=res;
+    }
+    attack(target){
+        target.res -= this.power;
+        console.log(`${this.name} attacked ${target.name}, reducing its resilience to ${target.res}`);
+    }
+    play(target){
+        if(target instanceof Unit){ 
+            target.res += 3;
+            console.log(`${this.name} played on ${target.name}, increasing its resilience to ${target.res}`);
+        }else{
+            throw new Error("Target must be a unit!");
+        }
+    }
+}
+
+
+//Effects have a card
+//"text" and target a unit's "stat" by increasing or
+//reducing it by
+// "magnitude" they have to be "play"-ed
+// with a Unit to target
+class Effect extends Card{
+    constructor(name,cost,text,stat,magnitude){
+        super (name,cost);
+        this.text=text;
+        this.stat=stat;
+        this.magnitude=magnitude;
+    }
+    play(target){
+        if(target instanceof Unit){
+            if(this.stat === "resilience"){
+                target.res += this.magnitude;
+                console.log(`${this.name} played on ${target.name}, ${this.text} to ${target.res}`);
+            }else if(this.stat === "power"){
+                target.power += this.magnitude;
+                console.log(`${this.name} played on ${target.name}, ${this.text} to ${target.power}`);
+            }
+        }else{
+            throw new Error("Target must be a unit!");
+        }
+    }
+}
