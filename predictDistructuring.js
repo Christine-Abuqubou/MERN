@@ -1,3 +1,6 @@
+//distructuring mean
+// destructuring is a javascript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables
+
 const cars = ['Tesla','Marcedes','Honda'];
 const [randomCar] = cars;
 const [,otherRandomCar] = cars;
