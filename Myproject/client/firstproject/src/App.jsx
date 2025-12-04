@@ -5,6 +5,7 @@ import './App.css'
 import HomeComponents from './Components/HomeComponents'
 import AboutComponents from './Components/AboutComponents'
 import PersonCard from './Components/PersonCardComponents'
+import HelloDojo from './Components/HelloDojo'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
       {/* <HomeComponents name ="Christine" location="Palestine" hobbies={["reading", "coding", "hiking"]} />
       <AboutComponents/> */}
+      <HelloDojo/>
       <PersonCard firstName="ahmad " lastName="Badwan" age={21} hairColor="Brown"  />
       <PersonCard 
   firstName="Lana" 
@@ -35,7 +37,7 @@ function App() {
   age={19} 
   hairColor="Dark Brown" 
 />
-      
+
     </>
   )
 }
