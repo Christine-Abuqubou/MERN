@@ -230,6 +230,53 @@ console.log(greet('Christine'));
 
 
 
+//the difference between function and arrow function
+//1. syntax
+// function declaration
+//we cant make instance of arrow function because it dosnt have its own this keyword
+// whats the react fragment 
+// react fragment is a way to group multiple elements without adding extra nodes to the DOM
+// we can use react fragment to return multiple elements from a component without adding extra nodes to the DOM
+// we can use react fragment to wrap multiple elements in a component without adding extra nodes to the DOM
+// we can use react fragment to group multiple elements in a component without adding extra nodes to the DOM
+
+// react fragment syntax
+// 1. <React.Fragment> </React.Fragment>
+// 2. <> </>
+// example of react fragment
+// function MyComponent(){
+//     return (
+//         <>
+//             <h1>Hello World</h1>
+//             <p>This is a react fragment example</p>
+//         </>
+//     );
+// }
+
+
+// why we use react fragment
+// 1. to avoid adding extra nodes to the DOM
+// 2. to improve performance
+// 3. to make the code more readable
+// 4. to make the code more modular
+
+//whatd DOM
+// DOM stands for Document Object Model
+// it is a programming interface for web documents
+// it represents the page so that programs can change the document structure style and content
+// the DOM represents the document as nodes and objects
+// that way programming languages can interact with the page
+
+//WHAT IS NODE DOM
+// Node DOM is a way to interact with the DOM using NodeJS
+// it is used to create server-side applications that can manipulate the DOM
+// it is used to create server-side applications that can render HTML pages
+// it is used to create server-side applications that can handle HTTP requests and responses
+
+
+
+
+
 
 
 
