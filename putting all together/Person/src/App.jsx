@@ -13,18 +13,23 @@ function App() {
 
   return (
     <>
-     <Person firstName="chris" lastName="bsharah" />
-     <Person firstName="chris" lastName="bsharah" />
+     {/* <Person firstName="chris" lastName="bsharah" />
+     <Person firstName="chris" lastName="bsharah" /> */}
 
      <div className="app">
       <Header />
+      <div className="bshh">
       <Navigation />
       <Main>
+        <div className='sub'>
         <SubContents />
         <SubContents />
         <SubContents />
+        </div>
         <Advertisement />
+        
       </Main>
+      </div>
     </div>
 
 
