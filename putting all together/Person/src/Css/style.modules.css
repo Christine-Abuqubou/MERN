@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  background: #4a90e2;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.navigation {
+  background: #d9d9d9;
+  padding: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sub-content {
+  background: #f2f2f2;
+  flex: 1;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.advertisement {
+  background: #ffd97d;
+  width: 200px;
+  padding: 20px;
+}
