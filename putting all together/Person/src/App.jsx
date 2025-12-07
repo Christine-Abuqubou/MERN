@@ -8,6 +8,8 @@ function App() {
   return (
     <>
      <Person firstName="chris" lastName="bsharah" />
+     <Person firstName="chris" lastName="bsharah" />
+
          </>
   )
 }
