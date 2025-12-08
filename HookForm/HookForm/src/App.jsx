@@ -3,13 +3,14 @@ import './App.css'
 import UserForm from './Components/HookForms'
 import Form from './Components/FormComponent'
 import Forms from './Components/Form'
+import ColorBoxForm from './Components/boxColor'
 
 function App() {
 
   return (
     <>
       
-     <UserForm/>
+     {/* <UserForm/>
      <br/>
 
      <Form/>
@@ -17,7 +18,11 @@ function App() {
      <br/>
      <br/>
 
-     <Forms/>
+     <Forms/> */}
+<br/>
+     <br/>
+     <br/>
+     <ColorBoxForm/>
     </>
   )
 }
